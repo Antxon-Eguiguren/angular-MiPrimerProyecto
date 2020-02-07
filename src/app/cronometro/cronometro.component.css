@@ -1,0 +1,16 @@
+div {
+    border: 1px solid #aaa;
+    margin-top: 20px;
+    padding: 20px;
+    width: 60px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+    font-size: 3em;
+}
+
+button {
+    margin: 4px;
+}

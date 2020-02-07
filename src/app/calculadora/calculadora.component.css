@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.resultado {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    font-size: 3em;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.boton {
+    width: 100px;
+    font-size: 3em;
+    margin: 5px;
+    border-radius: 25%;
+}
+
+.cero {
+    width: 300px;
+}

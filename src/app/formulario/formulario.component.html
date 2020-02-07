@@ -1,0 +1,12 @@
+<label>Nombre</label>
+<input type="text" [(ngModel)]="persona.nombre"><br>
+<label>Apellidos</label>
+<input type="text" [(ngModel)]="persona.apellidos"><br>
+<label>Edad</label>
+<input type="number" [(ngModel)]="persona.edad"><br>
+<input type="submit" value="Enviar"><br>
+<hr>
+<p>{{persona | json}}</p>
+<p>{{persona.nombre}}</p>
+<p>{{persona.apellidos}}</p>
+<p>{{persona.edad}}</p>
