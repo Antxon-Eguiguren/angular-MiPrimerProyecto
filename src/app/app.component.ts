@@ -11,9 +11,12 @@ export class AppComponent {
   campoTexto: string;
 
   constructor() {
-    this.arrNums = [5, 8, 3];
+    // Para el componente cronometro
+    this.arrNums = [5, 7, 3];
+
+    // Para el ngModel
     this.campoTexto = 'Valor por defecto';
-    setTimeout(() => this.campoTexto = 'Valor después de 2 seg', 3000);
+    setTimeout(() => this.campoTexto = 'Valor después de 3 seg', 3000);
   }
 
   manejarTerminaContador($event) {

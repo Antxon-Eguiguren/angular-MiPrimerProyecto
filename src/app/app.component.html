@@ -1,13 +1,17 @@
-<!-- <app-calculadora></app-calculadora>
+<app-calculadora></app-calculadora>
+
 <app-cronometro [inicio]="arrNums[0]" (terminaContador)="manejarTerminaContador($event)"></app-cronometro>
-<app-cronometro [inicio]="arrNums[1]"></app-cronometro>
-<app-cronometro inicio="25"></app-cronometro>
-<app-cronometro inicio="8" fin="4"></app-cronometro>
+<app-cronometro [inicio]="arrNums[1]" [fin]="3"></app-cronometro>
+<app-cronometro [inicio]="25" [fin]="20"></app-cronometro>
+<app-cronometro [inicio]="8" [fin]="4"></app-cronometro>
 <app-cronometro></app-cronometro>
+
 <app-suma [num1]="7" [num2]="3" (resuelveSuma)="manejarResuelveSuma($event)"></app-suma>
 
-<input type="text" [(ngModel)]="campoTexto">
-<p>{{campoTexto}}</p> -->
-<!-- select / radiobutton / email / submit / url / date / password / range -->
+<app-saludo></app-saludo>
 
 <app-formulario></app-formulario>
+
+<input type="text" [(ngModel)]="campoTexto">
+<p>{{campoTexto}}</p>
+<!-- select / radiobutton / email / submit / url / date / password / range -->

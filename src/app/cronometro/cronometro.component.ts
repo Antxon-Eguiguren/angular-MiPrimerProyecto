@@ -9,26 +9,31 @@ export class CronometroComponent implements OnInit {
 
   // TODO: crear la variable (ejemplo TODO Tree)
   // FIXME: arregla esto, es un error
-  contador: number;
 
   @Input() inicio: number;
-  @Input() fin: string;
+  @Input() fin: number;
 
   @Output() terminaContador: EventEmitter<string>;
 
+  contador: number;
+  final: number;
+
   constructor() {
-    this.contador = 12;
     this.terminaContador = new EventEmitter();
   }
 
   ngOnInit() {
+    // Para que contador tenga el valor de inicio y si no está definido que coja el valor por defecto 10.
     this.contador = this.inicio || 10;
+
+    // Para que final tenga el valor de fin y si no está definido que coja el valor por defecto 0.
+    this.final = this.fin || 0;
   }
 
   comenzarContador() {
     const intervalo = setInterval(() => {
       this.contador--;
-      if (this.contador === 0) {
+      if (this.contador === this.final) {
         clearInterval(intervalo);
         this.terminaContador.emit('El cronómetro ha terminado');
       }

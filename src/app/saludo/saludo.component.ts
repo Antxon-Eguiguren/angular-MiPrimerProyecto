@@ -9,31 +9,27 @@ export class SaludoComponent implements OnInit {
 
   // DEFINICIÓN PROPIEDADES: nombre y tipo
   mensaje: string;
-  identificador: string;
+  identificadorParrafo: string;
 
   constructor() {
-
     // INICIALIZO LAS PROPIEDADES
     this.mensaje = 'Este es el mensaje';
-    this.identificador = 'idParrafo';
-
-    setTimeout(() => {
-      this.mensaje = 'Otro mensaje diferente';
-    }, 3000);
-
+    this.identificadorParrafo = 'idParrafo';
   }
 
   ngOnInit() {
+    // LO QUE SE EJECUTE AQUÍ SE HARÁ CUANDO SE INICIA EL COMPONENTE (SE CARGA LA PÁGINA CON EL COMPONENTE)
+    setTimeout(() => {
+      this.mensaje = 'Otro mensaje diferente ejecutado pasados de 3 segundos';
+    }, 3000);
   }
 
   devolverCadena() {
     return 'Cadena devuelta desde el método';
   }
 
-  pulsarBoton($event) {
-    console.log('Botón pulsado');
+  pulsarBoton() {
     this.mensaje = 'Texto desde el boton';
-    console.log($event.target)
   }
 
 }
